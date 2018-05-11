@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<title>管理员列表</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+<link rel="stylesheet" href="__STATIC__/admin/assets/css/amazeui.min.css"/>
+<link rel="stylesheet" href="__STATIC__/admin/assets/css/admin.css">
+<script src="__STATIC__/admin/assets/js/jquery.min.js"></script>
+<script src="__STATIC__/admin/assets/js/app.js"></script>
+</head>
+<body>
+</head>
+
+<body>
+{include file="common:header" /}
+
+<div class="am-cf admin-main"> 
+
+{include file="common:left" /}
+<div class="admin-biaogelist">
+
+    <div class="listbiaoti am-cf">
+      <ul class="am-icon-flag on">管理员信息管理</ul>
+      
+      <dl class="am-icon-home" style="float: right;"> 当前位置： 管理员列表 > <a href="{:url('index')}">首页</a></dl>
+      
+      <dl>
+        <a href="{:url('tianjiaadmin')}"><button type="button" class="am-btn am-btn-danger am-round am-btn-xs am-icon-plus">添加管理员</button></a>
+      </dl>     
+    </div>
+    <volist name='re' id='re'>
+    <form class="am-form am-g" action="#" method="post">
+          <table width="100%" class="am-table am-table-bordered am-table-radius am-table-striped">
+            <thead>
+              <tr class="am-success">
+                <th class="table-check"><input type="checkbox" /></th>
+                <th class="table-id">ID</th>
+                <th class="table-title">管理员名称</th>
+                <th class="table-author am-hide-sm-only">管理员密码</th>
+                <th width="163px" class="table-set">操作</th>
+              </tr>
+            </thead>
+            <tbody>
+            {volist name="re" id="er"}
+             <tr>
+                <td><input type="checkbox" /></td>
+                <td>{$er.id}</td>
+                <td>{$er.username}</td>
+                <td class="am-hide-sm-only">{$er.password}</td>
+                <td><div class="am-btn-toolbar">
+                    <div class="am-btn-group am-btn-group-xs">
+                      <a href="{:url('xiugaiadmin',array('id'=>$er.id))}"><button name="{$er.id}" type="button" title="修改管理员" class="am-btn am-btn-default am-btn-xs am-text-success am-round"><span class="am-icon-pencil-square-o"></span> </button></a>
+                      <a href="#"><button name="shanchu" type="button" id="{$er.id}" title="删除管理员" class="am-btn am-btn-default am-btn-xs am-text-danger am-round"><span class="am-icon-trash-o"></span></button></a>
+                    </div>
+                  </div></td>
+              </tr>
+            {/volist}             
+            </tbody>
+          </table>
+          <div class="am-btn-group am-btn-group-xs">
+              <!-- <button type="submit" class="am-btn am-btn-default"><span class="am-icon-save"></span> 刷新</button> -->
+            </div>
+        <hr />
+          <p>
+        备注：操作图标含义
+         <a class="am-text-success am-icon-file" title="修改管理员"> 修改管理员</a> 
+         <a class="am-icon-trash-o am-text-danger" title="删除"> 删除管理员</a>
+        </p>
+        </form>
+        </volist>
+<div class="foods">
+      <ul>后台信息管理系统</ul>
+      <dl><a href="" title="返回头部" class="am-icon-btn am-icon-arrow-up"></a></dl>    
+    </div>
+</div>
+</div>
+</div>
+</body>
+<script src="__STATIC__/admin/assets/js/amazeui.min.js"></script>
+<script type="text/javascript">
+ $(".am-text-danger").click(function(){
+   $(this).parents('tr').css('display','none');  
+  })
+  $(".am-text-danger").click(function(){
+      var id=$(this).attr('id');     
+        $.ajax({  
+                url:"{:url('shanchuadmin')}",  
+                type:"post",  
+//            async:false,//同步  
+                data:{"id":id},//传出的数据  
+                dataType:"json",//返回的数据类型，常用：html/text/json  
+                success:function(data){ 
+                   alert($data);                      
+                }  
+            })     
+  }) 
+</script>
+</html>

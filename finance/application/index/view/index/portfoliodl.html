@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>投资组合</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Monetary Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="__STATIC__/index/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="__STATIC__/index/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="__STATIC__/index/js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<link href="__STATIC__/index/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+<link type="text/css" rel="stylesheet" href="__STATIC__/index/css/cm-overlay.css" />
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="__STATIC__/index/css/font-awesome.min.css" />
+<!-- //font-awesome icons -->
+<link href="//fonts.googleapis.com/css?family=Varela+Round&subset=hebrew" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+</head>
+	
+<body>
+<!-- banner -->
+	<div class="banner1">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header navbar-left">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<h1><a class="navbar-brand" href="index.html">金融</a></h1>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav class="cl-effect-13" id="cl-effect-13">
+						<ul class="nav navbar-nav" style="margin-left: 350px;">
+							<li><a href="{:url('indexdl')}">首页</a></li>
+							<li><a href="{:url('servicesdl')}">我们的服务</a></li>
+							<li class="active"><a href="{:url('portfoliodl')}">投资组合</a></li>
+							<li><a href="{:url('maildl')}">联系我们</a></li>
+							<li><a href="{:url('person',array('username'=>$Think.session.user))}">欢迎:{$Think.session.user}</a></li>
+							<li><a href="{:url('index')}">注销</a></li>
+						</ul>
+					</nav>
+				</div>
+			</nav>
+		</div>
+	</div>
+<!-- //banner -->
+	
+<!-- pop-up-box -->
+
+<!-- //pop-up-box -->
+<script src="__STATIC__/index/js/jquery.magnific-popup.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function() {
+	$('.popup-with-zoom-anim').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-zoom-in'
+	});
+																	
+	});
+</script>
+<!-- portfolio -->
+	<div class="portfolio">
+		<div class="container">
+			<h3 class="w3_agile_head">投资组合</h3>
+			<p class="augue_agile">将手中的资金分散到不同领域绝对是明智之举</p>
+
+			<div class="agileits_portfolio_grids">
+				<div class="col-md-3 agileits_portfolio_grid">
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="__STATIC__/index/images/7.jpg">
+							<img src="__STATIC__/index/images/7.jpg" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>在20到30岁时</h4>
+								<p>以20%投资普通股票，20%投资基金，余下的20%资金存放定期存款或购买债券</p> 
+							</div>
+						</a>
+					</div>
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="__STATIC__/index/images/1.jpg">
+							<img src="__STATIC__/index/images/1.jpg" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>马柯维茨投资组合理论</h4>
+								<p>利用均值--方差模型分析得出通过投资组合可以有效降低风险的结论</p> 
+							</div>
+						</a>
+					</div>
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="__STATIC__/index/images/2.jpg">
+							<img src="__STATIC__/index/images/2.jpg" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>投资风格的分析</h4>
+								<p>对大盘价值型组合，两种风格分析方法所得结果相似，对中小盘和成长型组合，则存在显著差异</p> 
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 agileits_portfolio_grid">
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="__STATIC__/index/images/8.jpg">
+							<img src="__STATIC__/index/images/8.jpg" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>在30到50岁时</h4>
+								<p>以40%投资股票，10%购买基金，10%购买国债，剩下的40%投在有固定收益的投资标</p> 
+							</div>
+						</a>
+					</div>
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="__STATIC__/index/images/3.jpg">
+							<img src="__STATIC__/index/images/3.jpg" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>二基金分离定理</h4>
+								<p>在允许卖空的证券组合问题中，每种有效证券组合都是一种无风险资产与特殊的风险资产的组合</p> 
+							</div>
+						</a>
+					</div>
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="__STATIC__/index/images/4.jpg">
+							<img src="__STATIC__/index/images/4.jpg" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>风格投资的表现</h4>
+								<p>风格投资常常表现出小市值效应和BV/MV效应</p> 
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 agileits_portfolio_grid">
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="__STATIC__/index/images/9.jpg">
+							<img src="__STATIC__/index/images/9.jpg" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>在50到60岁时</h4>
+								<p>以40%的资金投在证券方面，60%资金则投于有固定收益的投资标</p> 
+							</div>
+						</a>
+					</div>
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="__STATIC__/index/images/5.jpg">
+							<img src="__STATIC__/index/images/5.jpg" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>套利定价理论</h4>
+								<p>当存在交易成本时,连续时间无套利定价会因为高昂的交易成本而无法实现</p> 
+							</div>
+						</a>
+					</div>
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="__STATIC__/index/images/15.jpg">
+							<img src="__STATIC__/index/images/15.jpg" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>风格投资周期性转换策略</h4>
+								<p>价值型/成长型组合的收益率存在较为明显的周期性，投资者可通过风格转换以获取更好收益</p> 
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 agileits_portfolio_grid">
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="__STATIC__/index/images/10.jpg">
+							<img src="__STATIC__/index/images/10.jpg" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>到了65岁以上</h4>
+								<p>以60%的资金投资债券或固定收益型基金，30%购买股票，10%投于银行储蓄或其他标的</p> 
+							</div>
+						</a>
+					</div>
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="__STATIC__/index/images/16.jpg">
+							<img src="__STATIC__/index/images/16.jpg" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>现代投资组合理论</h4>
+								<p>由投资组合理论、资本资产定价模型、APT模型、有效市场理论以及行为金融理论等部分组成</p> 
+							</div>
+						</a>
+					</div>
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="__STATIC__/index/images/17.jpg">
+							<img src="__STATIC__/index/images/17.jpg" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>风格投资对证券市场影响</h4>
+								<p>在同一证券市场挂牌的基金虽持有完全不同的股票，但却同涨同跌</p> 
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+				<script src="__STATIC__/index/js/jquery.tools.min.js"></script>
+				<script src="__STATIC__/index/js/jquery.mobile.custom.min.js"></script>
+				<script src="__STATIC__/index/js/jquery.cm-overlay.js"></script>
+				<script>
+					$(document).ready(function(){
+						$('.cm-overlay').cmOverlay();
+					});
+				</script>
+		</div>
+	</div>
+<!-- //portfolio -->
+
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<h2><a href="index.html">金融</a></h2>
+			<h3>(+000) 123 456 789</h3>
+			<form action="{:url('email',array('username'=>$Think.session.user))}" method="post">
+				<input type="email" name="email" placeholder="你的email..." required="">
+				<input type="submit" value="提交">
+			</form>
+			<div class="agileits_w3layouts_nav">
+				<div class="agileits_w3layouts_nav_left">
+					<ul>
+						<li><a href="{:url('indexdl')}">首页</a></li>
+						<li><a href="{:url('servicesdl')}">我们的服务</a></li>
+						<li class="active"><a href="{:url('portfoliodl')}">投资组合</a></li>
+						<li><a href="{:url('maildl')}">联系我们</a></li>
+					</ul>
+				</div>
+				<div class="agileits_w3layouts_nav_right">
+					<ul>
+						<li><a href="javascript:" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="javascript:" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="javascript:" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+						<li><a href="javascript:" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<p>© 2017 Monetary. All rights reserved | Design by Finance</p>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="__STATIC__/index/js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- start-smooth-scrolling -->
+<script type="text/javascript" src="__STATIC__/index/js/move-top.js"></script>
+<script type="text/javascript" src="__STATIC__/index/js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smooth-scrolling -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>

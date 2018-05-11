@@ -1,0 +1,34 @@
+	<div id="small-dialog" class="mfp-hide w3ls_small_dialog wthree_pop">
+		<h3>登 录</h3>		
+		<div class="agileits_modal_body">
+			<form action="{:url('index/login')}" method="post">
+				<div class="agileits_w3layouts_user" style="margin-top: 30px;">
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<input type="text" name="username" placeholder="用户名" required="">
+				</div>
+				<div class="agileits_w3layouts_user" style="margin-top: 30px;">
+					<i class="fa fa-key" aria-hidden="true"></i>
+					<input type="password" name="password" placeholder="密码" required="">
+				</div>
+				<input type="submit" value="登 录" style="margin-top: 50px;">
+			</form>
+			<h5>还没有账号？<a href="#small-dialog1" class="play-icon popup-with-zoom-anim">注 册</a></h5>
+		</div>
+	</div>
+	<div id="small-dialog1" class="mfp-hide w3ls_small_dialog wthree_pop">
+		<h3>注 册</h3>		
+		<div class="agileits_modal_body">
+			<form action="{:url('index/register')}" method="post">
+				<div class="agileits_w3layouts_user" style="margin-top: 30px;">
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<input type="text" name="username" placeholder="用户名" required="">
+				</div>
+				<div class="agileits_w3layouts_user" style="margin-top: 30px;">
+					<i class="fa fa-key" aria-hidden="true"></i>
+					<input type="password" name="password" placeholder="密码" required="">
+				</div>
+				<input type="submit" value="注 册" style="margin-top: 50px;">
+			</form>
+			<h5>已有账号 <a href="#small-dialog" class="play-icon popup-with-zoom-anim">登 录</a></h5>
+		</div>
+	</div>
